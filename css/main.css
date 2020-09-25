@@ -570,6 +570,7 @@ strong {
 .team {
 	padding-bottom: 70px;
 	background-image: url(../img/bg_section2.jpg);
+	overflow: hidden;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
