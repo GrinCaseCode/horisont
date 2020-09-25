@@ -556,6 +556,10 @@
 	width: 100%;
 	margin-bottom: 5px;
 }
+.footer_phone i {
+	margin-left: 0;
+	margin-right: 10px;
+}
 .footer_phone {
 	flex-wrap: wrap;
 }
