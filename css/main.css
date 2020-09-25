@@ -570,7 +570,6 @@ strong {
 .team {
 	padding-bottom: 70px;
 	background-image: url(../img/bg_section2.jpg);
-	overflow: hidden;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -583,6 +582,7 @@ strong {
 	margin: 0 -15px;
 	width: 1240px;
 	padding-bottom: 50px;
+	position: relative;
 }
 .slider-team::after {
 	position: absolute;
