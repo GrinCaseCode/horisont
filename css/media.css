@@ -407,9 +407,6 @@
 .logo {
     font-size: 11px;
     }
-    .logo span {
-    max-width: 135px;
-}
 .wrapper {
     padding-top: 62px;
 }
@@ -422,6 +419,7 @@
 	padding-left: 0;
 }
 .billbord .btn-main {
+	max-width: 280px;
     font-size: 13px;
     }
     .title-section {
