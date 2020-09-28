@@ -51,6 +51,15 @@
 	.block-form {
 		padding: 30px 25px;
 	}
+
+	/*card*/
+	.card__buttons .btn-main {
+    padding: 21px 26px;
+    margin-right: 4px;
+}
+.col_pl50 {
+	padding-left: 15px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -150,6 +159,28 @@
 	.title-section_insta {
 		margin-bottom: 20px;
 	}
+
+	/*card*/
+	.card__image {
+		margin-bottom: 10px;
+	}
+	.hidden_tablet {
+		display: none;
+	}
+	.card__buttons .btn-main {
+    padding: 21px 33px;
+    margin-right: 28px;
+}
+.tabs_main li a {
+	font-size: 16px;
+}
+.tab-container_main .title-min {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.tab-container_main p {
+	margin-bottom: 20px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -396,6 +427,30 @@
 	padding: 14px 0;
 	border-bottom: 1px #000 solid;
 }
+
+/*card*/ 
+.card__term {
+	margin-left: 30px;
+}
+.card__buttons .btn-main {
+	margin-right: 0;
+}
+.card__buttons a {
+	width: 500px;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.tabs_main li {
+	flex: inherit;
+	margin-bottom: 15px;
+}
+.tabs_main {
+	margin-top: 20px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -573,7 +628,41 @@
     .instagram {
     	padding-bottom: 15px;
     }
+
+    /*card*/
+    .title-middle {
+    font-size: 18px;
+    line-height: 30px;
 }
+.card__title {
+	font-size: 17px;
+	line-height: 23px;
+}
+.card__right li {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-top: 13px;
+    }
+    .card__line-price {
+    	margin-top: 20px;
+    	display: block;
+    }
+    .card__term {
+    	margin-left: 0;
+    	margin-top: 15px;
+    }
+    .tabs_main li a {
+    	padding-left: 20px;
+    }
+    .title-min {
+    font-size: 16px;
+}
+.tab-container_main {
+	padding: 15px;
+}
+}
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
@@ -603,7 +692,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+.show_tablet {
+	display: none !important;
+}
 }
 
 /* Large Devices, Wide Screens */

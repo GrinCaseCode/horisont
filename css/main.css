@@ -1210,3 +1210,144 @@ font-weight: 700;
 	transform: rotate(-45deg);
 }
 /*End Sandwich*/
+
+/*card*/
+.breadcumbs {
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.breadcumbs li a {
+	color: #000;
+	transition: all 0.3s;
+	border-bottom: 1px transparent solid;
+}
+.breadcumbs li span {
+	padding: 0 4px;
+}
+.breadcumbs li a:hover {
+	border-color: #000;
+}
+.header__bottom {
+	background-color: #004483;
+}
+.card {
+	padding-bottom: 64px;
+}
+.menu li a {
+	color: #fff;
+}
+.menu li a:hover {
+	border-color: #fff;
+}
+.card__image {
+	padding: 10px;
+	box-shadow: 0 3px 10px #def0f5;
+border-radius: 6px;
+background-color: #ffffff;
+display: inline-block;
+}
+.card__image img {
+	max-width: 100%;
+	height: auto;
+}
+.title-middle {
+	font-size: 24px;
+line-height: 36px;
+font-weight: 700;
+}
+.card__title {
+	margin-top: 15px;
+	font-size: 18px;
+font-weight: 700;
+}
+.card__right li {
+	font-size: 16px;
+	line-height: 21px;
+	padding-left: 20px;
+	margin-top: 20px;
+	position: relative;
+}
+.card__right li::before {
+	position: absolute;
+	display: block;
+	content: "•";
+	top: 2px;
+	left: 0;
+}
+.card__price {
+	font-size: 18px;
+color: #004483;
+	font-weight: 500;
+}
+.card__price strong {
+	font-size: 24px;
+}
+.card__term {
+	font-size: 16px;
+	margin-left: 40px;
+}
+.card__term strong {
+	font-size: 18px;
+}
+.card__line-price {
+	margin-top: 33px;
+	display: flex;
+	align-items: center;
+}
+.card__buttons {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card__buttons .btn-main {
+	padding: 21px 33px;
+	margin-right: 28px;
+}
+.tabs_main {
+	margin: 0 -5px;
+	margin-top: 45px;
+	margin-bottom: 6px;
+	display: flex;
+	align-items: center;
+}
+.tabs_main li {
+	flex: 1;
+	padding: 0 5px;
+	margin: 0;
+}
+.tabs_main li a {
+	box-shadow: 0 7px 7px #def0f5;
+border-radius: 6px;
+font-weight: 700;
+border: 1px solid #f2f9fb;
+}
+.tab-container_main {
+	padding: 35px;
+	line-height: 21px;
+}
+.tab-container_main li::before {
+	content: "•";
+	margin-right: 10px;
+}
+.tab-container_main li {
+	margin-bottom: 23px;
+}
+.tab-container_main li:last-child {
+	margin-bottom: 0;
+}
+.tab-container_main p {
+	margin-bottom: 36px;
+}
+.tab-container_main p:last-child {
+	margin-bottom: 0;
+}
+.title-min {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.col_pl50 {
+	padding-left: 50px;
+}
