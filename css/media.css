@@ -886,6 +886,9 @@
 	.show_tablet {
 		display: none !important;
 	}
+	.catalog-menu li {
+    display: block !important;
+}
 }
 
 /* Large Devices, Wide Screens */
