@@ -1,234 +1,158 @@
 $(document).ready(function() {
 
-	/*animate*/
-	new WOW().init();
-
-	//плавный скролл
-	$(".menu li a").mPageScroll2id({
-		offset: 70
-	});
-
 
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
-		if ($(".nav").is(":hidden")) {
-			$(".nav").slideDown(200);
+		if ($(".header__bottom").is(":hidden")) {
+			$(".header__bottom").slideDown(200);
 		} else {
-			$(".nav").slideUp(200);
+			$(".header__bottom").slideUp(200);
 		}
-		$(".nav a").click(function() {
-			$(".nav").slideUp(200);
-			$(".sandwich").removeClass("active");
-		});
+		$(".header__bottom a").click(function() {
+		$(".header__bottom").slideUp(200);
+		$(".sandwich").removeClass("active");
+	});
 	});
 
-	
-	$("#fl_inp").change(function(){
-		var filename = $(this).val().replace(/.*\\/, "");
-		$("#fl_nm").html(filename);
+
+//кнопка sandwich
+	$(".btn-transparent__more").click(function(e) {
+		e.preventDefault();
+		if ($(".hiiden-text").is(":hidden")) {
+			$(".hiiden-text").slideDown(200);
+			$(this).html("Скрыть");
+		} else {
+			$(".hiiden-text").slideUp(200);
+			$(this).html("Читать полностью");
+		}
 	});
 
-	/*высота блока по экрану*/
-	function heightDetect() {
-		$('.nav').css("height", $(window).height() -$(".header").height() + 40);
-	};
-	heightDetect();
-	$(window).resize(function() {
-		heightDetect();
+	$('.btn-dropdown').click(function() {
+	$('.head-sidebar').addClass("head-sidebar_mob")
+	if ($(".head-sidebar li:not('.active')").is(":hidden")) {
+		$(".head-sidebar li:not('.active')").slideDown(200);
+	} else {
+		$(".head-sidebar li:not('.active')").slideUp(200);
+	}
+	$('.head-sidebar_mob li').click(function() {
+		$(".head-sidebar_mob li:not('.active')").slideUp(200);
 	});
+});
+
+ /*высота блока по экрану*/
+    function heightDetect() {
+      $('.header__bottom').css("height", $(window).height() -$(".header").height() + 40);
+    };
+    heightDetect();
+    $(window).resize(function() {
+      heightDetect();
+    });
+	$('.tabs li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parent().parent().parent().parent().find(".tab-container").find(".tab-pane").hide();
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn();
+	});
+
+	$(".question__name").click(function(e) {
+		e.preventDefault();
+		$(".question").removeClass("active");
+		$(".question__answer").slideUp(200);
+		if ($(this).siblings(".question__answer").is(":hidden")) {
+			$(this).parent().addClass("active");
+			$(this).siblings(".question__answer").slideDown(200);
+
+		} else {
+			$(this).parent().removeClass("active");
+			$(this).siblings(".question__answer").slideUp(200);
+
+		}
+	});
+
 	//слайдер
 
-	$('.slider-for').slick({
-		arrows: false,
+	$('.slider-team').slick({
+		arrows: true,
 		dots: false,
 		infinite: true,
-		slidesToShow: 1,
-		asNavFor: '.slider-nav',
+		slidesToShow: 4,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-angle-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-angle-right"></i><div/>',
 		slidesToScroll: 1,
 		responsive: [{
-			breakpoint: 768,
+			breakpoint: 1200,
 			settings: {
-				
+				slidesToShow: 3,
+			} 
+		},
+		{
+			breakpoint: 993,
+			settings: {
+				slidesToShow: 2,
+			} 
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
 			} 
 		}
 		]
 	});
 
-
-	$('.slider-nav').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		asNavFor: '.slider-for',
+	$('.slider-sertificats').slick({
+		arrows: true,
 		dots: false,
-		focusOnSelect: true,
-		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		infinite: true,
+		slidesToShow: 3,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-angle-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-angle-right"></i><div/>',
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 993,
+			settings: {
+				slidesToShow: 2,
+			} 
+		}
+		]
+	});
+
+	$('.slider-clients').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 5,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-angle-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-angle-right"></i><div/>',
+		slidesToScroll: 1,
 		responsive: [{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+			} 
+		},
+		{
+			breakpoint: 993,
+			settings: {
+				slidesToShow: 3,
+			} 
+		}
+		,
+		{
 			breakpoint: 768,
 			settings: {
-				slidesToShow:3,
-			}
-
-		}]
+				slidesToShow: 2,
+			} 
+		}
+		]
 	});
 
-	$('.slider-review').slick({
-		arrows: false,
-		dots: true,
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-	});
-
-	/*
-
-	$('.row_tarifs').slick({
-		arrows: false,
-		dots: false,
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-	mobileFirst: true,	
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: 'unslick'
-    }
-  ]
-});
-*/
-
-$('.slider-for-car').slick({
-	arrows: true,
-	dots: false,
-	infinite: true,
-	slidesToShow: 1,
-	prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-	nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
-	asNavFor: '.slider-nav-car',
-	slidesToScroll: 1,
-	responsive: [{
-		breakpoint: 768,
-		settings: {
-			arrows: false,
-		} 
-	}
-	]
-});
-
-
-$('.slider-nav-car').slick({
-	slidesToShow: 4,
-	arrows: false,
-	slidesToScroll: 1,
-	asNavFor: '.slider-for-car',
-	dots: true,
-	focusOnSelect: true,
-	prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-	nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
-	responsive: [{
-		breakpoint: 768,
-		settings: {
-			slidesToShow:3,
-		}
-
-	}]
-});
-
-$('.slider-team').slick({
-	arrows: true,
-	dots: false,
-	infinite: true,
-	slidesToShow: 3,
-	prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-	nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
-	slidesToScroll: 1,
-	responsive: [{
-		breakpoint: 1200,
-		settings: {
-			slidesToShow:2,
-		}
-
-	},
-	{
-		breakpoint: 992,
-		settings: {
-			slidesToShow:1,
-		}
-
-	},
-	{
-		breakpoint: 481,
-		settings: {
-			slidesToShow:1,
-			arrows: false,
-			dots: true,
-		}
-
-	}
-	]
-});
-
-$('.slider-reviews-social').slick({
-	arrows: true,
-	dots: false,
-	infinite: true,
-	slidesToShow: 1,
-	prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-	nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
-	slidesToScroll: 1,
-	responsive: [{
-		breakpoint: 993,
-		settings: {
-			arrows: false,
-			dots: true,
-		}
-
-	}]
-});
-
-
-$('.tabs-main li a').click(function(event) {
-	event.preventDefault();
-	$(this).parent().parent().find("li").removeClass('active');
-	$(this).parent().addClass('active');
-	$(this).parent().parent().siblings(".tab-container").find(".tab-pane").hide();
-	var selectTab = $(this).attr("href");
-	$(selectTab).fadeIn();
-});
-
-$(".question__name").click(function(e) {
-	e.preventDefault();
-	$(".question").removeClass("active");
-	$(".question__answer").slideUp(200);
-	if ($(this).siblings(".question__answer").is(":hidden")) {
-		$(this).parent().addClass("active");
-		$(this).siblings(".question__answer").slideDown(200);
-
-	} else {
-		$(this).parent().removeClass("active");
-		$(this).siblings(".question__answer").slideUp(200);
-
-	}
-});
-
-$('.location__text').click(function(event) {
-	event.preventDefault();
-	if ($(".location-list").is(":hidden")) {
-		$(".location-list").slideDown(200);
-	} else {
-		$(".location-list").slideUp(200);
-	}
-});
-
-$(".location-list a").click(function() {
-	$(".location-list").slideUp(200); 
-});
-
-
-	 // стайлер для select
-	 $('select').styler();
+	// mask-input 
+$(".input-phone").mask("+7 (999) 999-99-99");
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
@@ -236,10 +160,7 @@ $(".location-list a").click(function() {
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	$(".fancybox").fancybox();
 
-	
-// mask-input 
 
-$(".input-phone").mask("+7 (999) 999-99-99");
 
 
 	//Кнопка "Наверх"
