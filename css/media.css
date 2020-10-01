@@ -241,6 +241,13 @@
 .head-sidebar {
 	margin-bottom: 20px;
 }
+
+/*contacts*/
+.contacts .contacts-form {
+	float: none;
+	margin: 0 auto;
+	margin-top: 30px;
+}
 }
 
 
@@ -553,6 +560,11 @@
 		padding-top: 30px;
 		padding-bottom: 20px;
 	}
+
+	/*contacts*/
+	.contacts__item {
+		font-size: 14px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -852,6 +864,43 @@
 .catalog-item__price span {
     font-size: 17px;
     }
+
+    /*contacts*/
+    .contacts__block {
+    	margin: 0 -15px;
+    }
+    .contacts__item {
+    font-size: 11px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.contacts__title {
+    font-size: 15px;
+    line-height: 15px;
+    }
+    .contacts-form__title {
+    font-size: 22px;
+}
+.contacts-form {
+	padding: 20px 15px;
+}
+.contacts .contacts-form {
+	margin: 0 -15px;
+	width: auto;
+	max-width: inherit;
+	margin-top: 25px;
+}
+.contacts {
+	background-image: none;
+}
+.contacts__block {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#map-contact {
+	margin-top: 0;
+	height: 350px;
+}
 }
 
 
