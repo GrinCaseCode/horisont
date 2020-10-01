@@ -1884,3 +1884,111 @@ background-color: #f2f9fb;
 	height: 510px;
 	margin-top: -35px;
 }
+
+/*about*/
+.about {
+	padding-top: 45px;
+	padding-bottom: 70px;
+	background-image: url(../img/bg_about.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+.about-block {
+	padding-top: 60px;
+	padding-left: 30px;
+	padding-right: 322px;
+	padding-bottom: 30px;
+	min-height: 680px;
+	box-shadow: 0 7px 7px #def0f5;
+border-radius: 6px;
+margin-bottom: 60px;
+background-color: #ffffff;
+position: relative;
+}
+.text-page {
+	font-size: 16px;
+line-height: 24px;
+}
+.text-page p {
+	margin-bottom: 20px;
+}
+.about-block .descr-title {
+	margin-bottom: 20px;
+}
+.about-block .text-page p a {
+	font-weight: 700;
+	color: #000;
+}
+.about-block__bottom {
+	margin-top: 65px;
+	position: relative;
+	z-index: 2;
+	text-align: right;
+}
+.about-block__bottom strong {
+	font-size: 18px;
+line-height: 24px;
+padding-bottom: 10px;
+	display: block;
+}
+.about-block__image {
+	margin-right: -106px;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+.about-block__blockquote {
+	position: relative;
+}
+.about-block__blockquote::before,
+.about-block__blockquote::after {
+	position: absolute;
+	display: block;
+	content: "“";
+	font-size: 48px;
+	line-height: 48px;
+	height: 20px;
+	color: #fff;
+	text-shadow: 0 2px 3px #004483;
+	font-weight: 900;
+}
+.about-block__blockquote::before {
+	top: -30px;
+	left: 0px;
+}
+.about-block__blockquote::after {
+    bottom: -23px;
+    right: 18px;
+}
+.item-about {
+	padding: 29px 20px;
+	min-height: 100%;
+	box-shadow: 0 7px 7px #def0f5;
+border-radius: 6px;
+background-color: #ffffff;
+}
+.item-about__number {
+	width: 51px;
+	height: 51px;
+	box-shadow: 0 9px 7px rgba(0, 68, 131, 0.4);
+	background-color: #ffffff;
+	background-image: linear-gradient(-170deg, #065aa7 0%, #004483 100%);
+	border-radius: 50%;
+	text-shadow: 0 2px 3px #004483;
+	color: #ffffff;
+	font-size: 48px;
+	line-height: 30px;
+	font-weight: 900;
+	padding-left: 25px;
+	padding-top: 9px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+.item-about p {
+	line-height: 21px;
+}
+.row_about > div {
+	margin-top: 35px;
+}
