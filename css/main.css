@@ -1995,3 +1995,129 @@ background-color: #ffffff;
 	margin-top: 35px;
 }
 
+/*actions*/
+.actions {
+	padding-bottom: 64px;
+	background-image: url(../img/bg_actions.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.item-action {
+	margin-top: 35px;
+	padding: 0 28px;
+	height: 170px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 7px 7px #def0f5;
+border-radius: 6px;
+background-color: #ffffff;
+}
+.item-action p {
+	color: #004483;
+font-size: 16px;
+text-transform: uppercase;
+letter-spacing: 0.8px;
+font-weight: 900;
+flex: 1;
+}
+.item-action__number {
+	width: 95px;
+height: 95px;
+margin-right: 34px;
+box-shadow: 0 9px 7px rgba(240, 103, 3, 0.4);
+background-color: #f4a712;
+background-image: linear-gradient(-170deg, #f4a712 0%, #f06703 100%);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-shadow: 0 2px 3px #f06703;
+color: #ffffff;
+font-size: 48px;
+font-weight: 900;
+}
+.row_actions > div:nth-child(2) .item-action__number {
+	box-shadow: 0 9px 7px rgba(41, 106, 152, 0.4);
+	text-shadow: 0 2px 3px #296a98;
+	background-color: #4d97cb;
+background-image: linear-gradient(-170deg, #4d97cb 0%, #296a98 100%);
+}
+.row_actions > div:nth-child(3) .item-action__number {
+box-shadow: 0 9px 7px rgba(89, 153, 37, 0.4);
+text-shadow: 0 2px 3px #599925;
+background-color: #85d643;
+background-image: linear-gradient(-170deg, #85d643 0%, #599925 100%);
+}
+.text-big {
+	font-size: 18px;
+line-height: 24px;
+font-weight: 500;
+}
+.text-big strong {
+	color: #004483;
+}
+.text-big p {
+	margin-top: 20px;
+}
+.actions .title-section {
+	margin-top: 50px;
+}
+.order-service {
+	padding-top: 45px;
+	padding-bottom: 75px;
+	background-image: url(../img/bg_order.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.order-service .title-section {
+	padding-bottom: 38px;
+	text-align: center;
+}
+.order-service .block-form__title {
+	text-align: center;
+}
+.order-service .item-form textarea {
+	height: 115px;
+}
+.order-service .btn-main {
+	max-width: 286px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.item-form input,
+ .item-form textarea,
+.btn-main {
+	font-size: 14px;
+}
+.order-service .block-form {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.order-service__image {
+	top: 80px;
+	margin-left: -100px;
+	left: 100%;
+	position: absolute;
+	z-index: -2;
+}
+.social-screen {
+	padding: 45px 0;
+	background-image: url(../img/bg_screens.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.social-screen__block {
+	padding: 25px;
+	box-shadow: 0 7px 7px #def0f5;
+border-radius: 6px;
+background-color: #ffffff;
+}
+.social-screen__block img {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
