@@ -72,7 +72,16 @@
 		line-height: 20px;
 	}
 
-
+	/*actions*/
+	.item-action p {
+		font-size: 14px;
+	}
+	.item-action__number {
+    width: 73px;
+    height: 73px;
+    margin-right: 20px;
+        font-size: 38px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -267,6 +276,16 @@
 		margin: 0 auto;
 	}
 
+	/*actions*/
+	.item-action__number {
+    width: 95px;
+    height: 95px;
+    margin-right: 34px;
+    font-size: 48px;
+}
+.row_actions {
+	justify-content: center;
+}
 }
 
 
@@ -616,6 +635,7 @@
 		margin-top: 20px;
 	}
 
+	
 }
 
 /* Extra Small Devices, Phones */
@@ -975,8 +995,12 @@
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
+	.about-block__bottom p {
+		max-width: 165px;
+		display: inline-block;
+	}
 
-
+	
 }
 
 
