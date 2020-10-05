@@ -2121,3 +2121,32 @@ background-color: #ffffff;
 	max-width: 100%;
 	height: auto;
 }
+
+/*services*/
+.list-category {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.list-category li {
+	margin-right: 37px;
+	margin-bottom: 25px;
+}
+.list-category li a {
+	color: #000000;
+font-size: 18px;
+line-height: 21px;
+padding: 0 8px;
+padding-bottom: 2px;
+font-weight: 700;
+border-bottom: 2px #004483 solid;
+	display: inline-block;
+	transition: all 0.3s;
+}
+.list-category li.active a,
+.list-category li a:hover {
+	border-color: #f24741;
+}
+.list-category li:last-child {
+	margin-right: 0;	
+}
