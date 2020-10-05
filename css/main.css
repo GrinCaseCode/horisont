@@ -470,6 +470,8 @@ strong {
 	background-color: #ffffff;
 	width: 100%;
 	font-family: 'Muller';
+	font-size: 14px;
+	line-height: 21px;
 	color: #000;
 }
 .item-form textarea {
@@ -1992,3 +1994,4 @@ background-color: #ffffff;
 .row_about > div {
 	margin-top: 35px;
 }
+
