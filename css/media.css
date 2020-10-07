@@ -681,6 +681,43 @@
 	padding: 0 6px;
 	padding-bottom: 0;
 }
+
+.header__right {
+	display: block;
+}
+.header__right .social-list {
+	display: none;
+}
+.phone-main {
+	    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 0px;
+    overflow: hidden;
+    color: transparent;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f28e02;
+    background-image: url(../img/te);
+    background-image: linear-gradient(-170deg, #ff1f17 0%, #ce0902 100%);
+    transition: all 0.3s;
+}
+.phone-main::before {
+	font-size: 15px;
+	color: #fff;
+	content: "\f879";
+	    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+        font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1082,6 +1119,14 @@
 }
 }
 
+@media only screen and (max-width : 345px) {
+.logo img {
+    width: 93px;
+}
+.logo {
+    font-size: 9px;
+}
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
