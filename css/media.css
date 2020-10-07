@@ -531,7 +531,8 @@
 		font-size: 14px;
 		display: block;
 		padding: 14px 0;
-		border-bottom: 1px #000 solid;
+		color: #004483;
+		border-bottom: 1px #004483 solid;
 	}
 
 	/*card*/ 
